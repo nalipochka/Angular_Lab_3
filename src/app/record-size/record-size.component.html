@@ -1,0 +1,11 @@
+<div>
+  <button (click)="showCar()">Car</button>
+  <button (click)="showPlane()">Airplane</button>
+  <button (click)="showShip()">Ship</button>
+</div>
+
+<div *ngIf="currentObject">
+  <h2>{{currentObject.name}}</h2>
+  <img [src]="currentObject.image" [alt]="currentObject.name">
+  <p>{{currentObject.description}}</p>
+</div>
